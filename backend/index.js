@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect( "mongodb+srv://thanuja:mern@user.zqfap.mongodb.net/user?retryWrites=true&w=majority&appName=user", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected'))
